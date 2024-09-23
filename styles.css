@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+
+
+}
+
+a {
+  color: var(--text-color);
+}
+
+
+
+/* ----------Loading Animation css end ------- */
+:root {
+  --bg-color: #ededed;
+  --bg-color: #081b29;
+  --bg-hf-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+  --logo-color: #ff2f00;
+  --back-shadow-for-sidebar: 0.1875rem 0.1875rem 0.3125rem rgba(255, 255, 255, 0.4);
+  /* Corrected variable name */
+}
+
+
+html {
+  font-size: 100%;
+  overflow-x: auto;
+}
+
+body {
+  background: var(--bg-hf-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+#parent {
+  font-size: 1rem;
+  display: inline-block;
+  overflow: hidden;
+  color: orangered;
+  font-family: "Irish Grover", sans-serif;
+  letter-spacing: 1px;
+}
+
+.logo {
+  font-size: 2rem;
+  line-height: .8;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #ffff;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+#tagline {
+  font-size: .5rem;
+  overflow: hidden;
+  color: rgba(0, 255, 255, 0.641);
+  margin-top: 5px;
+  text-align: right;
+  position: relative;
+}
+
+#tagline:hover {
+  color: aqua;
+}
+
+
+.back-button {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+
+.header2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+#summary-text {
+  white-space: nowrap;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/*------------------------header-------------------------------- */
+
+/*------------------------ Container design start------------------------------- */
+.container {
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex: 1;
+  /* border: .5rem solid rgb(0, 255, 94); */
+  font-family: 'Irish Grover', sans-serif;
+  position: relative;
+}
+
+
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  right: 0;
+  height: 100%;
+  /* border: .5rem solid blue; */
+  overflow: auto;
+}
+
+.left-sidebar.collapsed+.content {
+  left: 0px;
+}
+
+.main-content {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content::-webkit-scrollbar {
+  width: .1rem;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  /* background: var(--text-color); */
+  border-radius: 12px;
+}
+
+
+.main-content {
+  font-family: sans-serif;
+  /* background: var(--bg-color); */
+}
+
+
+
+
+
+
+
+/*------------------------ Container design  end------------------------------- */
+
+/*------------------------ side bar-------------------------------- */
+/* -----------------main header footer and sidebar design completed at line number 454 */
+
+/* -----------------video page design starts-----------------------. */
+
+
+section {
+  /* border: 1px solid  red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5%;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+
+.addres {
+  width: 100%;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: .5rem;
+  padding: .5rem 1rem;
+
+
+}
+
+.addres p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
+.addres p:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* overflow: visible; */
+
+}
+
+.container2 #video_player {
+  height: 100%;
+}
+
+#video_player {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: var(--text-color);
+  border-radius: .5rem;
+  z-index: 1;
+
+}
+
+#video_player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+}
+
+
+
+.playlistBx {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: 1rem;
+  /* border: 1px solid red; */
+}
+
+
+
+.playlistBx .row {
+  display: block;
+  text-align: left;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-top: 1px solid var(--text-color);
+  /* border-bottom: 1px solid var(--text-color); */
+
+
+
+}
+
+/* submit button css */
+#notes-buttons{
+}
+
+#notes-buttons button{
+  width: 50%;
+  margin: auto;
+  background-color: green;
+  border: none;
+}
+
+#notes-buttons button:hover{
+  background-color: rgb(79, 208, 79);
+  color: white;
+}
+
+/* ------------------------------------------------ */
+
+
+/* Add this CSS */
+/* Add this CSS */
+
+.full-screen {
+
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+  z-index: 9;
+
+}
+
+.full-screen div {
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--back-shodow-for-container);
+  color: var(--text-color);
+  border: 0.1rem solid var(--text-color);
+}
+
+.full-screen div:hover {
+  color: var(--logo-color);
+  border: .1rem solid var(--logo-color);
+}
+
+.full-screen-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-hf-color);
+  z-index: 999;
+  display: none;
+}
+
+.full-screen-mode iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+.button-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.button-container::-webkit-scrollbar-thumb {
+  height: 80px;
+  background: var(--text-color);
+  border: 8px solid transparent;
+  border-radius: 12px;
+}
+/* Existing styles from the first CSS */
+
+details {
+  margin: 10px 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  width: 95%;
+  transition: max-height 0.3s ease; /* Added transition for dropdown */
+  overflow: hidden;
+}
+
+details summary {
+  padding: 10px 15px;
+  background-color: #f0f0f0; /* Background color from the second CSS */
+  color: #ff6600;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 550;
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Added transition for hover */
+}
+
+
+
+details summary:hover {
+  background-color: #e0e0e0; /* Hover background color */
+}
+
+details summary::after {
+  content: '▼'; /* Arrow mark */
+  font-size: 0.8em;
+  transition: transform 0.3s ease; /* Added transition for arrow */
+}
+
+details[open] summary::after {
+  transform: rotate(180deg); /* Rotate arrow when open */
+}
+
+/* Button styles */
+.playlistBx .button-container button {
+  width: 95%;
+  padding: 10px 15px;
+  margin: 10px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow .2s , color 0.3s ease; /* Added transition */
+  touch-action: manipulation;
+  font-weight: 600;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+}
+
+
+.playlistBx .button-container button:hover{
+  background-color: #f0f0f0; /* Hover background color */
+  color: #ff6600;
+}
+
+.playlistBx .button-container button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.playlistBx .button-container button:active {
+  background-color: #F7F7F7;
+  border-color: var(--text-color);
+  transform: scale(.96); /* Button press effect */
+}
+
+
+
+
+.syllabus-content {
+  margin-top: 1.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+
+}
+
+.syllabus-content p {
+  border-bottom: 1px solid var(--text-color);
+  color: var(--text-color);
+
+}
+
+.syllabus-content .syllabus {
+  color: var(--text-color);
+  padding-top: .5rem;
+
+}
+
+
+
+#nextLevelBtn {
+  background-color: #ffff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+
+}
+
+#nextLevelBtn a{
+  color: #ff6600;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 5000px) and (max-height: 650px) {
+  #video_player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40.25%;
+    height: 0;
+    background: var(--text-color);
+    border-radius: .5rem;
+
+  }
+
+  #video_player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+  }
+
+  .playlistBx .row {
+    width: 400px;
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#extra-space {
+  /* display: none; */
+}
+
+
+/*--------------------------------------------------- Design for desktop version is over at line number 402 ---------------------------------------------------*/
+
+/*---------------------------------------------------Design for Mobile version is over at line number 404 ---------------------------------------------------*/
+/* ------------------Responsive Design for --------------*/
+@media only screen and (max-width: 1045px) {
+
+  #logo-section {
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .open-icon {
+    display: block;
+    margin-right: 0.625rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    /* border: 1px solid red;   */
+    /* cursor: none; */
+
+  }
+
+  /* .open-icon span {
+    cursor: none;
+  }
+
+  .close-icon span {
+    cursor: none;
+
+
+  } */
+
+  footer {
+    display: none;
+  }
+
+  /* .content {
+        position: absolute;
+        top: 0;
+        left: 5rem;
+        right: 0;
+        height: 100%;
+        border: .2rem solid blue;
+      } */
+
+  .content {
+    top: auto;
+    left: 0rem;
+    /* border: .5rem solid red; */
+    height: 100%;
+
+  }
+
+
+}
+ 
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  * {
+    cursor: none;
+  }
+  #nextLevelBtn {
+    font-size: 10px;
+  
+  }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 380px) and (max-height: 670px) {
+  * {
+    cursor: none;
+  }
+
+
+
+
+
+  .side-bar-copyrights {
+    height: 11.6%;
+  }
+
+
+
+}
+
+.content {
+  /* border: .2rem solid red; */
+}
+
+
+/* -----------video page----------------- */
+
+
+@media (max-width: 767px) {
+
+
+  .header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+    /* Added transition for smooth animation */
+  }
+
+  #extra-space {
+    display: block;
+  }
+
+
+
+
+
+  .playlistBx {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .container2 {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  #video_player {
+    position: static;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 70.25%;
+    height: 0;
+    background: black;
+    border-radius: .5rem;
+
+  }
+
+  #video_player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+  }
+
+
+  .playlistBx {
+    position: static;
+    height: 400px;
+    margin-top: 0px;
+    /* border: 1px solid  rgb(51, 255, 0); */
+
+  }
+
+
+
+  .playlistBx .row {
+    display: block;
+    text-align: left;
+    color: var(--text-color);
+    font-size: .75rem;
+    font-weight: 700;
+    margin-left: 5px;
+    line-height: 40px;
+    width: 375px;
+    /* border: 1px solid  rgb(51, 255, 0); */
+  }
+
+
+  .button-container {
+    position: static;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 2px solid var(--text-color);
+
+  }
+
+
+
+  .playlistBx .button-container button {
+    cursor: none;
+
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .addres p {
+    font-size: 1rem;
+  }
+
+  .addres p {
+    font-size: .75rem;
+  }
+
+  details summary {
+    font-size: .85rem;
+    cursor: none;
+
+  }
+
+  .playlistBx .button-container button {
+    font-size: .85rem;
+
+  }
+
+
+  .syllabus-content {
+    margin-top: 2rem;
+    padding: .75rem;
+
+  }
+
+  .syllabus-content .syllabus {
+    font-size: .75rem;
+
+  }
+
+
+
+}
+
+@media (max-width: 400px) {
+  #video_player {
+    position: static;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 70.25%;
+    height: 0;
+    background: black;
+    border-radius: .5rem;
+
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .addres p {
+    font-size: .75rem;
+  }
+
+  details summary {
+    font-size: .75rem;
+
+  }
+
+  .playlistBx .button-container button {
+    font-size: .75rem;
+
+  }
+
+
+  .syllabus-content {
+    margin-top: 2rem;
+    padding: .75rem;
+
+  }
+
+  .syllabus-content .syllabus {
+    font-size: .5rem;
+
+  }
+
+  .playlistBx .row {
+    width: 345px;
+
+  }
+
+
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 90%;
+  }
+
+}
